@@ -20,7 +20,7 @@ from langchain.prompts import PromptTemplate
 
 # ============================ Load Env & API ============================
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
 if not GOOGLE_API_KEY:
     raise ValueError("No GOOGLE_API_KEY in .env")
 genai.configure(api_key=GOOGLE_API_KEY)
