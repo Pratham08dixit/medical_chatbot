@@ -11,7 +11,7 @@ google-generativeai==0.3.2
 
 # LangChain ecosystem
 langchain==0.1.14
-langchain-community==0.0.28
+langchain-community>=0.0.30,<0.1
 
 # Embeddings & vector search
 sentence-transformers==2.6.1
