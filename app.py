@@ -213,7 +213,7 @@ col1, col2 = st.columns([0.8, 0.2])
 with col2:
     if st.button("🧹 Clear Chat"):
         st.session_state.chat_history = []
-        st.experimental_rerun()
+        st.rerun()
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
