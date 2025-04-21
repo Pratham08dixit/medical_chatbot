@@ -172,7 +172,7 @@ def check_expiry_date(drug):
 def is_general_medical_query(q):
     ql = q.lower()
     kws = [
-        "symptom", "treat", "treatment", "diet", "cure", "prevent",
+        "symptom", "treat", "treatment", "diet", "cure", "prevent", "body", "pain", "headache", "bodyache"
         "prevention", "medicine", "medication", "drug", "salt formula",
         "formula", "use", "dosage", "salt", "composition", "chemical", "consult", "cure", "health", "disease", "accident", "injury", "weight", "gain", "loss", "bones"
     ]
