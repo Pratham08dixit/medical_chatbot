@@ -15,7 +15,7 @@ langchain-community>=0.0.30,<0.1
 
 # Embeddings & vector search
 sentence-transformers==2.6.1
-faiss-cpu==1.7.3
+faiss-cpu==1.10.0
 scikit-learn==1.4.2
 
 # SQLite (bundled with Python, listed here for completeness)
