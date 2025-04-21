@@ -18,6 +18,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain.llms.base import LLM
 from langchain.prompts import PromptTemplate
 
+import logging
+logging.getLogger("torch").setLevel(logging.ERROR)
+
+
 # ============================ Load Env & API ============================
 load_dotenv()
 GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
