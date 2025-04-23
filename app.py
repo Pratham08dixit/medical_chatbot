@@ -186,9 +186,11 @@ def setup_chain():
     llm = GoogleGenerativeLLM()
     prompt = PromptTemplate.from_template(
         """
-You are a medical domain expert. Answer only queries about:
+You are a medical domain expert and helpful assistant with a bit of personality. Answer only queries about:
 - drug usage, inventory, reorder needs, side effects, formulas.
 Reject any non-medical questions.
+Respond informally but professionally, with helpful, friendly replies. 
+If someone just greets you, greet back. 
 
 Context:
 {context}
